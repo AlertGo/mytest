@@ -1,0 +1,183 @@
+@import '~antd/dist/antd.css';
+  html,body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0
+}
+div,ul,li,ol,dl,dt,dd,img,button,p,input {
+  margin:0 ;
+  padding: 0
+}
+#news_ul>li {
+  list-style-type: circle;
+  margin-left: 30px;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#news_ul>li li {
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: 200;
+  list-style-type:disc;
+  line-height: 20px;
+}
+.news_imgbox {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  top: 0
+}
+#components-layout-demo-side .logo {
+  height: 32px;
+  background: #333;
+  border-radius: 6px;
+  margin: 16px;
+}
+.Main_none {
+  display: none;
+}
+#components-layout-demo-side .ant-layout-sider-collapsed .anticon {
+  font-size: 16px;
+  margin-left: 8px;
+}
+#components-layout-demo-side .ant-layout-sider-collapsed .nav-text {
+  display: none;
+}
+#components-layout-demo-side .ant-layout-sider-collapsed .ant-menu-submenu-vertical > .ant-menu-submenu-title:after {
+  display: none;
+}
+/** 新闻页img图片的替换与删除 start
+****/
+  #news_img_ul {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+#news_news_ul {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+#news_img_ul li {
+  width: 800px;
+  height: 30px;
+  font-size: 0;
+  line-height: 30px;
+  border-bottom:1px solid #999;
+}
+.news_fontli {
+  font-size: 14px;
+  font-weight: bold;
+}
+#news_img_ul li>span {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  height: 30px;
+}
+.news_img_spanA {
+  width: 60%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.news_img_spanB {
+  width: 20%;
+  text-align: center;
+}
+.news_img_spanC {
+  width: 20%;
+  text-align: center;
+}
+#setImg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  position:fixed;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.setImgs {
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -150px;
+  background-color: #aaa;
+  padding-left: 30px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 10px 2px black;
+  display: none;
+}
+.setImgs button {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.setImgs p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#news_img_add {
+  width: 800px;
+  height: 30px;
+  text-align: right;
+  display: none;
+  margin-top: 20px;
+}
+
+#replace_news{width: 100%;height: 100%;background-color: rgba(0,0,0,.5);position: fixed;left: 0;top: 0;z-index: 999;display: none}
+#replace_news_con{width: 900px;height: auto;margin: 10px auto;overflow: hidden;padding: 20px 0;padding-left: 15px;padding-right: 15px;box-sizing: border-box;background-color: rgba(255,255,255,.9);box-shadow: 3px 3px 20px 2px #333}
+#replace_detail_news{width: 100%;height: 100%;overflow: hidden;}
+#replace_detail_news input{display: inline-block;border-radius: 5px;padding-left: 10px;width:300px;height: 25px;vertical-align: top;font-size: 12px;border:1px solid #999;outline: none;margin-top: 10px;}
+#replace_detail_news label{display: inline-block;width: 60px;height: 25px;vertical-align: top;line-height: 25px;margin-top: 10px;}
+#replace_news button{margin-right: 20px;}
+.pagecolor{color: red;}
+
+
+.news_news_span1,.news_news_span2,.news_news_span3,.news_news_span4,.news_news_span5 {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.news_news_span1{width: 7%;text-align: center;}
+.news_news_span2{width: 15%;}
+.news_news_span3{width: 40%;margin-right: 5%;}
+.news_news_span4{width: 15%;}
+.news_news_span5{width: 15%;}
+#page{text-align: right;display: none;overflow: hidden;width: 800px;}
+#pagecons{display: inline-block;position: relative;height: 20px;overflow: hidden;vertical-align: top;margin-top: 20px;}
+.around{width: 30px;height: 20px;line-height: 18px;border:1px solid black;text-align: center;display: inline-block;box-sizing: border-box;margin-top: 20px;vertical-align: top;}
+#pagecon {display: block;height: 20px;font-size: 0;position: absolute;left: 0px;top: 0;transition: 1s;}
+#pagecon span{display: inline-block;line-height: 18px;width: 25px;height: 20px;margin: 0 5px;border:1px solid black;box-sizing: border-box;text-align: center;font-size: 12px;vertical-align: top;}
+#btns{position: fixed;bottom:100px;left: 30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
